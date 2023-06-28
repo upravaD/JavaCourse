@@ -2,9 +2,11 @@ package org.example.junior.chapter1.lesson1;
 
 /**
 
- Java for beginners.
- Chapter 1: "Основы Java".
- Lesson 1: "JDK and Hello World!".
+ <h1> Java for beginners.
+ <h2> Chapter 1: "Основы Java".
+ <h3> Lesson 1: "JDK and Hello World!".
+
+ <p> Первая программа.
 
  **/
 
