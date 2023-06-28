@@ -1,45 +1,45 @@
 package org.example.junior.chapter1.lesson2;
 
 /**
-
- <h1> Java for beginners.
+ <h1><i> Java for beginners. <i/>
  <h2> Chapter 1: "Основы Java".
  <h3> Lesson 2: "Переменные. Примитивные типы данных."
 
- <p> Эти типы можно разделить на четыре группы:
- <p>  1. Целые числа: byte, short, int, long — представляют собой целые числа со знаком.
- <br> 2. Числа с плавающей точкой — эта группа включает себе float и double — типы, которые хранят числа с точностью до определённого знака после запятой.
- <br> 3. Булевые значения — boolean — хранят значения типа "истина/ложь".
- <br> 4. Символы — в эту группу входит типа char.
-
+ <h3> Эти типы можно разделить на четыре группы:
+ <h4> 1. Целые числа: {@code byte}, {@code short}, {@code int}, {@code long} — представляют собой целые числа со знаком.
+ <br> 2. Числа с плавающей точкой — эта группа включает себе {@code float} и {@code double} — типы, которые хранят числа с точностью до определённого знака после запятой.
+ <br> 3. Логические значения — {@code boolean} — хранят значения типа "истина/ложь".
+ <br> 4. Символы — в эту группу входит тип {@code char}.
+ <br>
+ @see <a href="https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html">Документация Oracle</href>
+ @author upravaD
+ @version JDK 18
  **/
 
-//Класс для примитивных переменных.
 public class Variable {
-
-    //Целочисленные типы данных.@return
+    /**Целочисленные типы данных.*/
     private byte myByte;       //8 bit in memory
     private short myShort;     //16 bit in memory
     private int myInt;         //32 bit in memory
     private long myLong;       //64 bit in memory
 
-    //Вещественные типы данных.
+    /**Вещественные типы данных.*/
     private float myFloat;     //32 bit in memory
     private double myDouble;   //64 bit in memory
 
-    //Беззнаковый целочисленный тип данных.
+    /**Беззнаковый целочисленный тип данных.*/
     private char myChar;       //16 bit in memory
 
-    //Логический тип данных.
+    /**Логический тип данных.*/
     private boolean myBoolean; //8 bit in memory
 
 
-    //Конструктор класса.
+    /**Конструктор класса.*/
     public Variable() {
         System.out.println("Создан обьект класса 'Variable'!");
     }
 
-    //Инициализация переменных минимальными значениями.
+    /**Инициализация переменных минимальными значениями.*/
     public void initMinValue() {
         this.myByte    = Byte.MIN_VALUE;
         this.myShort   = Short.MIN_VALUE;
@@ -53,7 +53,7 @@ public class Variable {
         this.myBoolean = false;
     }
 
-    //Инициализация переменных максимальными значениями.
+    /**Инициализация переменных максимальными значениями.*/
     public void initMaxValue() {
         this.myByte    = Byte.MAX_VALUE;
         this.myShort   = Short.MAX_VALUE;
@@ -67,7 +67,7 @@ public class Variable {
         this.myBoolean = true;
     }
 
-    //Строковое представление данных.
+    /**Строковое представление данных.*/
     @Override
     public String toString() {
         return "Variable {" +
@@ -82,10 +82,10 @@ public class Variable {
                 "\n" + '}';
     }
 
-    //Метод запуска программы.
+    /**Метод запуска программы.*/
     public static void main(String[] args) {
 
-        //Создание класса переменных.
+        //Создание экземпляра класса.
         Variable myVariable = new Variable();
         System.out.println("=".repeat(50));
 
