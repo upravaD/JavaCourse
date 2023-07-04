@@ -4,7 +4,7 @@ package org.example.junior.chapter1.lesson4;
  *
  * <h1><i> Java for beginners. <i/>
  * <h2> Chapter 1: "Основы Java".
- * <h3> Lesson 2: "Цикл While".
+ * <h3> Lesson 4: "Цикл While".
  *
  * <h3> Это оператор цикла с неизвестным заранее числом итераций. Он выполняет заданный шаблон, пока условие выражения не примет ложь и буквально переводится как «пока».
  * <h3> Существуют две команды, влияющие на ход выполнения цикла: {@code break} и {@code continue}.
@@ -13,9 +13,9 @@ package org.example.junior.chapter1.lesson4;
  * <br>
  * <br>Синтаксис:
  * <blockquote><pre>
- *     while(условие) {
+ *     {@code while(условие) {
  *           тело метода;
- *         }
+ *         }}
  * </pre></blockquote>
  *
  * @see <a href="https://docs.oracle.com/javase/tutorial/java/nutsandbolts/while.html">Документация Oracle</href>

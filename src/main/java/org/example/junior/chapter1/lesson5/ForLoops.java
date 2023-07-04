@@ -3,13 +3,13 @@ package org.example.junior.chapter1.lesson5;
 /**
  * <h1><i> Java for beginners. <i/>
  * <h2> Chapter 1: "Основы Java".
- * <h3> Lesson 2: "Цикл For".
+ * <h3> Lesson 5: "Цикл For".
  *
  * <h3> Цикл {@code for} или "цикл со счётчиком", позволяет выполнить набор операций заданное количество раз. По сути это наиболее часто встречаемый вид цикла в Java и используется для различных задач, например для поиска элемента в массиве или для вычисления какого-либо выражения.
  * <br>
  * <br>Синтаксис:
  * <blockquote><pre>
- *     fоr (инициализация; условие; итерация) {
+ *     {@code fоr} (инициализация; условие; итерация) {
  *          тело цикла
  *     }
  * </pre></blockquote>
@@ -17,6 +17,7 @@ package org.example.junior.chapter1.lesson5;
  * @author upravaD
  * @version JDK 18
  * @see <a href="https://docs.oracle.com/javase/tutorial/java/nutsandbolts/for.html">Документация Oracle</href>
+ * @see <a href="https://www.youtube.com/watch?v=U0eOhyyG14k&list=PLEgFBkSxIsb_e5glouz33gQHs1e8t1nkV&index=6">YouTube</href>
  **/
 
 public class ForLoops {
