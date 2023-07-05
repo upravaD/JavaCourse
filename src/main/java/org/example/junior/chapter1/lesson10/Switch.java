@@ -48,24 +48,53 @@ import java.util.Scanner;
  **/
 
 public class Switch {
-    /**
-     * Экземпляр класса {@code Scanner} с параметром для ввода с клавиатуры.
-     **/
-    public Scanner scanner = new Scanner(System.in);
 
     /**
-     * Переменная, которая хранит в себе возраст пользователя.
+     * Экземпляр класса {@code Scanner} с параметром {@code System.in} для ввода с клавиатуры.
      **/
-    private int userAge;
+    public Scanner scanner = new Scanner(System.in);
 
     /**
      * Конструктор класса.
      **/
     public Switch() {}
 
-    /**Метод*/
-    public void checkUserAge() {
+    /**
+     * Метод выводит в консоль примитивный перечень действий. В зависимости от выбора пользователя меняется результат.
+     **/
+    public void showMenu() {
 
+        int userChoice; //Выбор пользователя.
+
+        //Заголовок меню.
+        System.out.println("Добро пожаловать в наш ресторан!");
+        System.out.println("Чего изволите?");
+        System.out.println("=".repeat(50));
+
+        do {
+            //Содержимое меню.
+            System.out.println("1. Покушать.");
+            System.out.println("2. Побухать.");
+            System.out.println("3. Покинуть ресторан.");
+            System.out.println("=".repeat(50));
+            System.out.print("Ваш выбор: ");
+            userChoice = scanner.nextInt();
+
+            switch (userChoice) {
+                case 1 -> { //Если пользователь ввел число 1.
+                    System.out.println("Приятного аппетита!");
+                    System.out.println("=".repeat(50));
+                    System.out.println("Что-нибудь еще?");
+                }
+                case 2 -> { //Если пользователь ввел число 2.
+                    System.out.println("Приятного вечера!");
+                    System.out.println("=".repeat(50));
+                    System.out.println("Что-нибудь еще?");
+                }
+                case 3 -> System.out.println("До свидания!");
+                default -> System.out.println("Ошибка ввода.");
+            }
+        } while (userChoice != 3); //Цикл завершается если пользователь ввел число 3.
     }
 
     /**
@@ -77,6 +106,6 @@ public class Switch {
         Switch switchObj = new Switch();
 
         //Запуск методов.
-        switchObj.checkUserAge();
+        switchObj.showMenu();
     }
 }

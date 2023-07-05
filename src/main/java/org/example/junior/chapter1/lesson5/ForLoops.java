@@ -17,6 +17,8 @@ package org.example.junior.chapter1.lesson5;
  * @author upravaD
  * @version JDK 18
  * @see <a href="https://docs.oracle.com/javase/tutorial/java/nutsandbolts/for.html">Документация Oracle</href>
+ * @see <a href="https://javarush.com/groups/posts/for-v-java">JavaRush</href>
+ * @see <a href="https://swiftbook.org/courses/416/lectures/4549">SwiftBook</href>
  * @see <a href="https://www.youtube.com/watch?v=U0eOhyyG14k&list=PLEgFBkSxIsb_e5glouz33gQHs1e8t1nkV&index=6">YouTube</href>
  **/
 

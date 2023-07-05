@@ -26,14 +26,9 @@ import java.util.Scanner;
 public class DoWhile {
 
     /**
-     * Экземпляр класса {@code Scanner} с параметром для ввода с клавиатуры.
+     * Экземпляр класса {@code Scanner} с параметром {@code System.in} для ввода с клавиатуры.
      **/
     public Scanner scanner = new Scanner(System.in);
-
-    /**
-     * Переменная, которая хранит в себе данные введенные пользователем.
-     **/
-    private int userChoice;
 
     /**
      * Конструктор класса.
@@ -41,29 +36,21 @@ public class DoWhile {
     public DoWhile() {}
 
     /**
-     * Метод выводит в консоль примитивный перечень действий. В зависимости от выбора пользователя меняется результат и останавливается если пользователь выбрал соответствующий пункт.
+     * Простой метод для демонстрации работы цикла {@code do-while}. Стартовое число увеличивается на единицу каждую итерацию цикла. Пользователь вводит число, которое является последним числом цикла.
      **/
-    public void showMenu() {
-        System.out.println("Выберите вариант действий: ");
-        System.out.println("=".repeat(50));
-        do {
-            //Представление меню.
-            System.out.println("1. Приветствие.");
-            System.out.println("2. Написать что-нибудь.");
-            System.out.println("3. Покинуть программу.");
-            System.out.println("=".repeat(50));
-            System.out.print("Ваш выбор: ");
-            userChoice = scanner.nextInt(); //Выбор пользователя.
+    public void start() {
+        System.out.print("Введите число: ");
 
-            if (userChoice == 1) { //Если пользователь ввел число 1.
-                System.out.println("Привет!");
-                System.out.println("=".repeat(50));
-            }
-            if (userChoice == 2) { //Если пользователь ввел число 2.
-                System.out.println("Пишу что-то оригинальное.");
-                System.out.println("=".repeat(50));
-            }
-        } while (userChoice != 3); //Цикл завершается если пользователь ввел число 3.
+        int startNumber = 0; //Стартовое значение.
+        int userNumber = scanner.nextInt(); //Значение пользователя.
+
+        do {
+            System.out.println(startNumber);
+            startNumber++; //Увеличение стартового числа на единицу.
+
+        } while (startNumber != userNumber); //Если стартовое значение становится равно значению пользователя, то цикл завершается.
+
+        System.out.println("Программа завершена.");
     }
 
     /**
@@ -75,6 +62,6 @@ public class DoWhile {
         DoWhile doWhile = new DoWhile();
 
         //Запуск методов.
-        doWhile.showMenu();
+        doWhile.start();
     }
 }

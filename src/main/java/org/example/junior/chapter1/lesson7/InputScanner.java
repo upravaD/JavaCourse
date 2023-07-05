@@ -24,7 +24,7 @@ import java.util.Scanner;
  **/
 public class InputScanner {
     /**
-     * Экземпляр класса {@code Scanner} с параметром для ввода с клавиатуры.
+     * Экземпляр класса {@code Scanner} с параметром {@code System.in} для ввода с клавиатуры.
      **/
     public Scanner scanner = new Scanner(System.in);
 
@@ -39,6 +39,7 @@ public class InputScanner {
     public void calculate() {
         boolean exit = true; //Маркер выхода из цикла.
         int wins = 0; //Счетчик побед.
+
         System.out.println("Введите ответ: ");
         while (exit) { //Условие цикла.
             int x = new Random().nextInt(100); //Первое слагаемое.
