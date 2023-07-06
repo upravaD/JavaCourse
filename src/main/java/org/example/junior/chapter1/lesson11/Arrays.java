@@ -30,12 +30,6 @@ public class Arrays {
     public int[] array;
 
     /**
-     * Конструктор класса.
-     **/
-    public Arrays() {
-    }
-
-    /**
      * Метод ручной инициализации массива с помощью блока инициализации.
      **/
     public void lazyInit() {

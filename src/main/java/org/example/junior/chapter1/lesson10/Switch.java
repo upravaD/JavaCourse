@@ -55,11 +55,6 @@ public class Switch {
     public Scanner scanner = new Scanner(System.in);
 
     /**
-     * Конструктор класса.
-     **/
-    public Switch() {}
-
-    /**
      * Метод выводит в консоль примитивный перечень действий. В зависимости от выбора пользователя меняется результат.
      **/
     public void showMenu() {

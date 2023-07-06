@@ -1,6 +1,6 @@
 package org.example.junior.chapter1.lesson12;
 
-import org.example.junior.chapter1.lesson11.Arrays;
+import java.util.Arrays;
 
 /**
  * <h1><i> Java for beginners. <i/>
@@ -36,19 +36,13 @@ public class ForEach {
     String[] strings = {"H", "e", "l", "l", "o", " ", "W", "o", "r", "l", "d", "!"};
 
     /**
-     * Конструктор класса.
-     **/
-    public ForEach() {
-    }
-
-    /**
      * Метод считает сумму целых чисел в массиве.
-     * @param array массив целых чисел.
-     * @return сумма в виде целого числа. 
+     * @param array Массив целых чисел.
+     * @return Сумма в виде целого числа.
      */
     public int numbersSum(int[] array) {
         int sum = 0;
-        for (int number: numbers) {
+        for (int number: array) { //Для каждого элемента массива array.
             sum = sum + number;
         }
         return sum;
@@ -56,14 +50,15 @@ public class ForEach {
 
     /**
      * Метод формирует одну строку из массива строк.
+     * @param array Массив строк.
+     * @return Строка склеенная из ячеек массива.
      */
     public String makeString(String[] array) {
-        String result;
-//        for (String str :
-//                ) {
-//
-//        }
-        return "";
+        String result = "";
+        for (String str : array) { //Для каждого элемента массива array.
+            result = result.concat(str);
+        }
+        return result;
     }
 
     /**
@@ -72,9 +67,19 @@ public class ForEach {
     public static void main(String[] args) {
 
         //Создание экземпляра класса.
-        
+        ForEach forEach = new ForEach();
 
         //Запуск методов.
-        
+        //numbersSum()
+        System.out.println("=".repeat(50));
+        int sum = forEach.numbersSum(forEach.numbers);
+        System.out.println("Массив чисел: " + Arrays.toString(forEach.numbers));
+        System.out.println("Сумма всех чисел массива: " + sum);
+
+        //makeString()
+        System.out.println("=".repeat(50));
+        String str = forEach.makeString(forEach.strings);
+        System.out.println("Массив строк: " + Arrays.toString(forEach.strings));
+        System.out.println("Все ячейки массива в одной строке: " + str);
     }
 }

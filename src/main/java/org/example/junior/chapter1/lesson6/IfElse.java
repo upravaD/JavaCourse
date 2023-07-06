@@ -49,12 +49,6 @@ public class IfElse {
     public int random = new Random().nextInt(myInt*2);
 
     /**
-     * Конструктор класса.
-     */
-    public IfElse() {
-    }
-
-    /**
      * Метод выводит в консоль разный результат, в зависимости от параметра.
      * @param random случайное целое число.
      */

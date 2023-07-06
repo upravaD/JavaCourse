@@ -29,11 +29,6 @@ public class InputScanner {
     public Scanner scanner = new Scanner(System.in);
 
     /**
-     * Конструктор класса.
-     **/
-    public InputScanner() {}
-
-    /**
      * Метод бесконечно генерирует случайное выражение сложения двух случайных чисел, где пользователю нужно ввести правильный ответ. Если ответ не правильный, то программа завершается.
      **/
     public void calculate() {
