@@ -31,17 +31,18 @@ package org.example.junior.chapter2.lesson14;
 public class ClassesAndObjects { //Основной класс программы, который совпадает с именем файла .java
     public static void main(String[] args) {
         //Создание экземпляра класса User.
-        User user = new User();
+        Person person = new Person();
 
         //Инициализация полей класса User.
-        user.age = 35;
-        user.name = "Андрей";
+        person.age = 35;
+        person.name = "Андрей";
 
         //Вывод в консоль.
-        System.out.println("Меня зовут " + user.name + ", мне " + user.age + " лет.");
+        System.out.println("Меня зовут " + person.name + ", мне " + person.age + " лет.");
     }
 }
-class User { //Подкласс программы, который представляет собой Пользователя и содержит в себе данные о нем.
+class Person { //Подкласс программы, который представляет собой Пользователя и содержит в себе данные о нем.
     int age; //Возраст.
     String name; //Имя.
+    protected Person(){}
 }
