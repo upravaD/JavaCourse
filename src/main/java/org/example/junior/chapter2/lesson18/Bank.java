@@ -22,73 +22,165 @@ import java.util.Scanner;
  **/
 
 public class Bank {
+    /**
+     * Данные клиента.
+     */
     private User user;
+
+    /**
+     * Номер карты клиента.
+     */
     private int cardNumber;
+
+    /**
+     * Пароль для входа в систему.
+     */
     private final String password = "pass";
+
+    /**
+     * Экземпляр класса {@code Scanner} с параметром {@code System.in} для ввода с клавиатуры.
+     **/
     private final Scanner scanner = new Scanner(System.in);
 
+    /**
+     * Метод валидации и регистрации клиента.
+     */
     public void enter() {
+
+        System.out.println("Добро пожаловать в Банк!");
         System.out.print("Введите пароль: ");
-        String userPassword = scanner.nextLine();
-        if (!userPassword.equalsIgnoreCase(password)) {
+        String userPassword = scanner.nextLine(); //Ввод пароля с клавиатуры.
+
+        if (!userPassword.equalsIgnoreCase(password)) { //Если введенный пароль не совпадает выводится ошибка.
             System.out.println("ERROR!!!");
-        } else {
-            setUser(scanner);
-            setCardNumber(new Random().nextInt());
+        } else { //Если совпадает, то запускается процесс регистрации.
+            System.out.println("Регистрация");
+            System.out.println("=".repeat(50));
+            setUser(scanner); //Заполнение клиентом пользовательских данных.
+            setCardNumber(new Random().nextInt(0, 1_000_000_000)); //Рандомный номер карты.
         }
     }
 
+    /**
+     * Представление объекта {@code Bank} в виде строки.
+     *
+     * @return Возвращает объект класса {@code String}.
+     */
     @Override
     public String toString() {
         return "Клиент: " + user +
                 "\nНомер карты: " + cardNumber;
     }
 
+    /**
+     * Сеттер для поля {@code User}.
+     *
+     * @param scanner Принимает значения введенные с клавиатуры.
+     */
     public void setUser(Scanner scanner) {
         this.user = User.createUser(scanner);
     }
 
-    public int getCardNumber() {
-        return cardNumber;
-    }
+    /**
+     * Сеттер для поля {@code User}.
+     *
+     * @param cardNumber Принимает целочисленное ззначение.
+     */
     public void setCardNumber(int cardNumber) {
         this.cardNumber = cardNumber;
     }
 
-    public String getPassword() {
-        return password;
-    }
-
+    /**
+     * Метод запуска программы.
+     */
     public static void main(String[] args) {
         Bank bank = new Bank();
         bank.enter();
+        System.out.println("=".repeat(50));
         System.out.println("Ваши данные: \n" + bank);
     }
 }
 
+/**
+ * Класс {@code User} представляет собой карточку клиента с его личными данными.
+ */
 class User {
+
+    /**
+     * Имя клиента.
+     */
     private String name;
+
+    /**
+     * Фамилия клиента.
+     */
     private String surname;
+
+    /**
+     * Адрес клиента.
+     */
     private Address address;
 
-    public String getName() {
-        return name;
-    }
-
-    public String getSurname() {
-        return surname;
-    }
-
+    /**
+     * Статический метод, который создает объект {@code User} и инициализирует его поля значениями, введенными с клавиатуры.
+     *
+     * @param scanner Принимает значения введенные с клавиатуры.
+     * @return Возвращает объект класса {@code User}.
+     */
     public static User createUser(Scanner scanner) {
         User user = new User();
+
         System.out.print("Введите имя: ");
-        user.name = scanner.nextLine();
+        user.setName(scanner.nextLine());
+
         System.out.print("Введите фамилию: ");
-        user.surname = scanner.nextLine();
-        user.address = Address.createAddress(scanner);
+        user.setSurname(scanner.nextLine());
+
+        user.setAddress(Address.createAddress(scanner));
+
         return user;
     }
 
+    /**
+     * Сеттер для поля name.
+     *
+     * @param name Строковое значение.
+     */
+    public void setName(String name) {
+        if (name.isEmpty()) { //Проверка на пустое значение.
+            System.out.println("Вы ввели пустое имя");
+        } else {
+            this.name = name;
+        }
+    }
+
+    /**
+     * Сеттер для поля surname.
+     *
+     * @param surname Строковое значение.
+     */
+    public void setSurname(String surname) {
+        if (surname.isEmpty()) { //Проверка на пустое значение.
+            System.out.println("Вы ввели пустую фамилию");
+        } else {
+            this.surname = surname;
+        }
+    }
+
+    /**
+     * Сеттер для объекта Address.
+     *
+     * @param address Экземпляр класса Address.
+     */
+    public void setAddress(Address address) {
+        this.address = address;
+    }
+
+    /**
+     * Представление объекта {@code User} в виде строки.
+     *
+     * @return Возвращает объект класса {@code String}.
+     */
     @Override
     public String toString() {
         return name + " " + surname +
@@ -96,36 +188,89 @@ class User {
     }
 }
 
+/**
+ * Класс {@code Address} представляет собой составной адрес клиента.
+ */
 class Address {
+
+    /**
+     * Город.
+     */
     private String city;
+
+    /**
+     * Улица.
+     */
     private String street;
+
+    /**
+     * Дом.
+     */
     private int house;
 
-    public String getCity() {
-        return city;
-    }
-
-    public String getStreet() {
-        return street;
-    }
-
-    public int getHouse() {
-        return house;
-    }
-
+    /**
+     * Статический метод, который создает объект {@code Address} и инициализирует его поля значениями, введенными с клавиатуры.
+     *
+     * @param scanner Принимает значения введенные с клавиатуры.
+     * @return Возвращает объект класса {@code Address}.
+     */
     public static Address createAddress(Scanner scanner) {
         Address address = new Address();
+
         System.out.print("Введите город: ");
-        address.city = scanner.nextLine();
+        address.setCity(scanner.nextLine());
+
         System.out.print("Введите улицу: ");
-        address.street = scanner.nextLine();
+        address.setStreet(scanner.nextLine());
+
         System.out.print("Введите дом: ");
-        address.house = scanner.nextInt();
+        address.setHouse(scanner.nextInt());
+
         return address;
     }
 
+    /**
+     * Сеттер для поля city.
+     *
+     * @param city Строковое значение.
+     */
+    public void setCity(String city) {
+        if (city.isEmpty()) { //Проверка на пустое значение.
+            System.out.println("Вы ввели пустую город");
+        } else {
+            this.city = city;
+        }
+    }
+
+    /**
+     * Сеттер для поля street.
+     *
+     * @param street Строковое значение.
+     */
+    public void setStreet(String street) {
+        if (street.isEmpty()) { //Проверка на пустое значение.
+            System.out.println("Вы ввели пустую фамилию");
+        } else {
+            this.street = street;
+        }
+    }
+
+    /**
+     * Сеттер для поля house.
+     *
+     * @param house Целочисленное значение.
+     */
+    public void setHouse(int house) {
+        this.house = house;
+    }
+
+    /**
+     * Представление объекта {@code Address} в виде строки.
+     *
+     * @return Возвращает объект класса {@code String}.
+     */
     @Override
     public String toString() {
-        return city + " " + street + " " + house;
+        return city + ", " + street + ", " + house;
     }
 }
