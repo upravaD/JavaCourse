@@ -11,7 +11,7 @@ package org.example.junior.chapter2.lesson22;
  * @version JDK 18
  * @see <a href="https://docs.oracle.com/javase/specs/jls/se18/html/jls-8.html">Документация Oracle</href>
  * @see <a href="https://javarush.com/groups/posts/608-kljuchevoe-slovo-this-v-primerakh">JavaRush</href>
- * @see <a href="https://swiftbook.org/courses/416/lectures/4563">SwiftBook</href>
+ * @see <a href="https://swiftbook.org/courses/416/lectures/4566">SwiftBook</href>
  **/
 
 public class FinalWord {
