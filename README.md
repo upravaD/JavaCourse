@@ -1,20 +1,18 @@
-<div aligh = "center"> 
+<span align = "center"> 
   <h1 >
     <img height="35" src="https://raw.githubusercontent.com/jmnote/z-icons/master/svg/java.svg">
     <i>JavaCourse</i>
     <img height="35" src="https://raw.githubusercontent.com/jmnote/z-icons/master/svg/java.svg"> 
   </h1>
-  <a> Методическое пособие по языку Java. </a>
-</div>
-
-###### ***[Начать обучение](https://github.com/upravaD/JavaCourse/fork)***    
+  
+#### Методическое пособие по языку Java.
+###### ***[Начать обучение](https://github.com/upravaD/JavaCourse/fork)***  
+</span>
 
 ---  
   
-### Java for Beginners 
-
-###### Этот пакет лекций предназначен для изучения основ языка программирования Java. 
-
+### :woman_student: Java for Beginners :man_student:
+###### Этот пакет лекций предназначен для изучения основ языка программирования Java.
 <br>
 <p> В этот раздел входит: </p>
 
