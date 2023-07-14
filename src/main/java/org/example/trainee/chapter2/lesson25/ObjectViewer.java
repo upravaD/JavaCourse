@@ -41,7 +41,7 @@ package org.example.trainee.chapter2.lesson25;
  *   }
  *  </pre></blockquote>
  *
- * <p> Таблица спецификаторов
+ * <p> Иерархия классов Java.
  * <br>
  * <img height="360" title="Иерархия классов" src="https://www.developerhelps.com/wp-content/uploads/2019/12/javaObjectclass.png">
  * </p>
