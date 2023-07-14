@@ -3,7 +3,7 @@ package org.example.trainee.chapter2.lesson26;
 /**
  * <h1><i> Java for beginners. <i/>
  * <h2> Chapter 2: "Объектно-ориентированное программирование".
- * <h3> Lesson 25: "Класс Object и метод toString()"
+ * <h3> Lesson 26: "Наследование."
  *
  * <p>
  * Наследование — это механизм, который позволяет создавать классы на основе других классов.
