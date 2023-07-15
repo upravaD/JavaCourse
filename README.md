@@ -1,8 +1,8 @@
 <span align = "center"> 
   <h1 >
-    <img height="35" src="https://raw.githubusercontent.com/jmnote/z-icons/master/svg/java.svg">
+    <img height="35" alt="Java" src="https://raw.githubusercontent.com/jmnote/z-icons/master/svg/java.svg">
     <i>JavaCourse</i>
-    <img height="35" src="https://raw.githubusercontent.com/jmnote/z-icons/master/svg/java.svg"> 
+    <img height="35" alt="Java" src="https://raw.githubusercontent.com/jmnote/z-icons/master/svg/java.svg"> 
   </h1>
   
 #### Методическое пособие по языку Java.
@@ -12,7 +12,7 @@
 ---  
   
 ### :woman_student: Java for Beginners :man_student:
-###### Этот пакет лекций предназначен для изучения основ языка программирования Java.
+###### Этот пакет лекций предназначен для изучения основ языка программирования Java. Для начала обучения установите [JDK18](https://download.oracle.com/java/18/archive/jdk-18.0.2.1_windows-x64_bin.msi (sha256)) и [IntelliJ IDEA 2022.3.3 (Ultimate Edition)](https://www.jetbrains.com/ru-ru/idea/download/download-thanks.html?platform=windows).
 <br>
 <p> В этот раздел входит: </p>
 
@@ -40,11 +40,15 @@
   
   - ["Классы и объекты."](https://github.com/upravaD/JavaCourse/blob/master/src/main/java/org/example/trainee/chapter2/lesson14/ClassesAndObjects.java)
   - ["Методы в Java."](https://github.com/upravaD/JavaCourse/blob/master/src/main/java/org/example/trainee/chapter2/lesson15/User.java)
-  - ["Типы возвращаемого значения и параметры метода."]()
-  - "Параметры метода."
-  - "Инкапсуляция. Сеттеры и Геттеры."
-  - "Оператор this."
-  - "Конструкторы."
-  - "Ключевое слово static."
-  - "Ключевое слово final."
-  - "StringBuilder."
+  - ["Типы возвращаемого значения и параметры метода."](https://github.com/upravaD/JavaCourse/blob/master/src/main/java/org/example/trainee/chapter2/lesson16/Student.java)
+  - ["Параметры метода."](https://github.com/upravaD/JavaCourse/blob/master/src/main/java/org/example/trainee/chapter2/lesson17)
+  - ["Инкапсуляция. Сеттеры и Геттеры."](https://github.com/upravaD/JavaCourse/blob/master/src/main/java/org/example/trainee/chapter2/lesson18/Bank.java)
+  - ["Оператор this."](https://github.com/upravaD/JavaCourse/blob/master/src/main/java/org/example/trainee/chapter2/lesson19/OperatorThis.java)
+  - ["Конструкторы."](https://github.com/upravaD/JavaCourse/blob/master/src/main/java/org/example/trainee/chapter2/lesson20/ClassConstructor.java)
+  - ["Ключевое слово static."](https://github.com/upravaD/JavaCourse/blob/master/src/main/java/org/example/trainee/chapter2/lesson21/StaticCounter.java)
+  - ["Ключевое слово final."](https://github.com/upravaD/JavaCourse/blob/master/src/main/java/org/example/trainee/chapter2/lesson22/FinalWord.java)
+  - ["StringBuilder."](https://github.com/upravaD/JavaCourse/blob/master/src/main/java/org/example/trainee/chapter2/lesson23/StringDesigner.java)
+  - ["Форматирование строк в Java."](https://github.com/upravaD/JavaCourse/blob/master/src/main/java/org/example/trainee/chapter2/lesson24/TypeFormatter.java)
+  - ["Класс Object и метод toString()."](https://github.com/upravaD/JavaCourse/blob/master/src/main/java/org/example/trainee/chapter2/lesson25/ObjectViewer.java)
+  - ["Наследование."](https://github.com/upravaD/JavaCourse/blob/master/src/main/java/org/example/trainee/chapter2/lesson26/Inheritance.java)
+  - ["Интерфейсы."](https://github.com/upravaD/JavaCourse/blob/master/src/main/java/org/example/trainee/chapter2/lesson27/Interfaces.java)
