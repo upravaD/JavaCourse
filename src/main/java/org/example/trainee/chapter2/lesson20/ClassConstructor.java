@@ -5,7 +5,12 @@ package org.example.trainee.chapter2.lesson20;
  * <h2> Chapter 2: "Объектно-ориентированное программирование".
  * <h3> Lesson 20: "Конструкторы".
  *
- * <p> Конструктор — специальный метод, отвечающий за создание нового объекта. Конструктор не имеет возвращаемого типа и называется так же, как класс, объект которого он создает. При этом один и тот же класс может иметь несколько конструкторов, отличающихся набором параметров. </p>
+ * <p>
+ *     Конструктор — специальный метод, отвечающий за создание нового объекта.
+ *     Конструктор не имеет возвращаемого типа и называется так же, как класс, объект которого он создает.
+ *     При этом один и тот же класс может иметь несколько конструкторов, отличающихся набором параметров.
+ * </p>
+ *
  * <p> Синтаксис:  </p>
  * <blockquote><pre>
  *  {@code 'модификатор доступа' 'имя конструктора' (параметры) {
@@ -67,9 +72,12 @@ public class ClassConstructor {
 
     public static void main(String[] args) {
         ClassConstructor emptyParameter = new ClassConstructor();
+
         System.out.println("Пустой конструктор: " + emptyParameter);
+
         ClassConstructor oneParameter = new ClassConstructor(1);
         System.out.println("Конструктор с одним параметром: " + oneParameter);
+
         ClassConstructor allParameter = new ClassConstructor(2, "text");
         System.out.println("Конструктор со всеми параметрами: " + allParameter);
     }
