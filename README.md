@@ -12,7 +12,7 @@
 ---  
   
 ### :woman_student: Java for Beginners :man_student:
-###### Этот пакет лекций предназначен для изучения основ языка программирования Java. Для начала обучения установите [JDK18](https://download.oracle.com/java/18/archive/jdk-18.0.2.1_windows-x64_bin.msi (sha256)) и [IntelliJ IDEA 2022.3.3 (Ultimate Edition)](https://www.jetbrains.com/ru-ru/idea/download/download-thanks.html?platform=windows).
+###### Этот пакет лекций предназначен для изучения основ языка программирования Java. Для начала обучения скачайте и установите [JDK18](https://download.oracle.com/java/18/archive/jdk-18.0.2.1_windows-x64_bin.msi (sha256)) и [IntelliJ IDEA 2022.3.3 (Ultimate Edition)](https://www.jetbrains.com/ru-ru/idea/download/download-thanks.html?platform=windows).
 <br>
 <p> В этот раздел входит: </p>
 
