@@ -1,4 +1,4 @@
-package org.example.trainee.chapter2.lesson28.model;
+package org.example.trainee.chapter2.lesson28.model2;
 
 /**
  * Класс данных о пользователе.

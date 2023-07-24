@@ -1,7 +1,7 @@
 package org.example.trainee.chapter2.lesson28; //Полный путь пакета.
 
-import org.example.trainee.chapter2.lesson28.model.Person; //Импорт необходимого класса.
-import org.example.trainee.chapter2.lesson28.model.*; //Импорт всех классов из пакета.
+import org.example.trainee.chapter2.lesson28.model1.Person; //Импорт необходимого класса.
+
 
 /**
  * <h1><i> Java for beginners. <i/>
@@ -15,11 +15,11 @@ import org.example.trainee.chapter2.lesson28.model.*; //Импорт всех к
  *
  *  <p>package org.example.trainee.chapter2.lesson28;</p>
  *  <p>
- *  org
- *   └── example
- *       └── trainee
- *           └── chapter2
- *               └── lesson28
+ *  &nbsp                org                               <br>
+ *  &ensp                 └── example                      <br>
+ *  &emsp&emsp&emsp            └── trainee                 <br>
+ *  &#09&nbsp                       └── chapter2           <br>
+ *  &#09&emsp&emsp&emsp&nbsp             └── lesson28      <br>
  * </p>
  *
  * @author upravaD
@@ -29,7 +29,7 @@ import org.example.trainee.chapter2.lesson28.model.*; //Импорт всех к
  * @see <a href="https://swiftbook.org/courses/416/lectures/4573">SwiftBook</href>
  **/
 
-public class Main {
+public class Packages {
     public static void main(String[] args) {
 
         // Создаем объект Person разными способами и устанавливаем значения его полей.
@@ -37,10 +37,14 @@ public class Main {
         person1.setName("Василий");
         person1.setAge(30);
 
-        Person person2 = new Person("Петр", 35);
+        org.example.trainee.chapter2.lesson28.model2.Person person2
+                = new org.example.trainee.chapter2.lesson28.model2.Person("Дмитрий", 35);
 
         // Выводим информацию о персоне.
-        System.out.println("Первый объект: " + person1);
-        System.out.println("Второй объект: " + person2);
+        System.out.println("Первый объект: класс " + person1 +
+                " ,расположенный по адресу: " + person1.getClass().getPackageName());
+
+        System.out.println("Второй объект: класс " + person2 +
+                " ,расположенный по адресу: " + person2.getClass().getPackageName());
     }
 }
