@@ -35,7 +35,7 @@ public class User {
         this.phoneNumber = phoneNumber;
     }
 
-    //Служебные методы.
+    //Геттеры и сеттеры.
 
     public String getName() {
         return name;
@@ -58,6 +58,10 @@ public class User {
         this.phoneNumber = phoneNumber;
     }
 
+    /**
+     * Строковое представление объекта.
+     * @return Обьект класса User в виде строки.
+     */
     @Override
     public String toString() {
         return "User{" +
