@@ -3,7 +3,7 @@ package org.example.trainee.chapter2.lesson29;
 /**
  * <h1><i> Java for beginners. <i/>
  * <h2> Chapter 2: "Объектно-ориентированное программирование".
- * <h3> Lesson 28: "Модификаторы доступа."
+ * <h3> Lesson 29: "Модификаторы доступа."
  *
  * <p>
  *  В Java, модификаторы доступа (access modifiers) определяют уровень видимости классов,
