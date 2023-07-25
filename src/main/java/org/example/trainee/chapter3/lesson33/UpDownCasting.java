@@ -45,7 +45,7 @@ public class UpDownCasting {
     public static void main(String[] args) {
 
         // Восходящее преобразование (Upcasting).
-        Animal animal = new Animal(); // Dog преобразуется в Animal.
+        Animal animal = new Dog(); // Dog преобразуется в Animal.
         animal.sound(); // Вызывается метод из класса Dog.
 
         // Нисходящее преобразование (Downcasting)
