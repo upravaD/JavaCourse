@@ -63,7 +63,9 @@ public class Polymorphism {
     }
 
     /**
-     * Метод запуска программы.
+     * В этом примере интерфейс Soundable определяет метод makeSound(),
+     * который должен быть реализован классами, которые его имплементируют.
+     * Классы Dog и Cat наследуют класс Animal, и они оба реализуют интерфейс Soundable.
      */
     public static void main(String[] args) {
 
