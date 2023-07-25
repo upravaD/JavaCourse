@@ -3,7 +3,7 @@ package org.example.trainee.chapter2.lesson30;
 /**
  * <h1><i> Java for beginners. <i/>
  * <h2> Chapter 2: "Объектно-ориентированное программирование".
- * <h3> Lesson 28: "Полиморфизм."
+ * <h3> Lesson 30: "Полиморфизм."
  *
  * <p>
  *  В Java, полиморфизм представляет собой один из четырех основных принципов
